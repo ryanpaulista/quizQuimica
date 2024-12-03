@@ -116,18 +116,20 @@ main {
 @media screen and (max-width: 400px) {
 
     header{
+        margin-top: 3em;
         h1{
-            font-size: 30px;
+            font-size: 25px;
         }
     }
 
     main{
         
-        border: solid 1px black;
         gap: 1em;
+        margin-top: -2em;
 
        .botoes{
-            font-size: 15px;
+            padding: 0;
+            font-size: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
