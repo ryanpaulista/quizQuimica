@@ -74,3 +74,67 @@ main {
         transform: translateY(-20px)
     }
 }
+
+@media screen and (max-width: 500px) {
+
+    header{
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-top: 5em;
+        padding: 1em;
+
+        h1{
+            font-size: 30px;
+        }
+    }
+
+    main{
+        
+        margin-top: 7em;
+        height: 21em;
+        gap: 1em;
+
+       .botoes{
+            padding: 0;
+            
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 7em;
+            
+       }
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    header{
+        h1{
+            font-size: 30px;
+        }
+    }
+
+    main{
+        
+        border: solid 1px black;
+        gap: 1em;
+
+       .botoes{
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 7em;
+            
+       }
+
+    }
+}
