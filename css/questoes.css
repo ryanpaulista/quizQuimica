@@ -8,7 +8,7 @@
 
 header {
     box-sizing: border-box;
-    width: 80%;
+    width: 100%;
     margin: 5em auto;
     font-size: 20px;
     font-family: "Irish Grover", system-ui;
@@ -37,7 +37,7 @@ main {
     width: 80%;
     padding: 0;
     margin: 0 auto;
-    margin-top: 10em;
+    margin-top: 5em;
     display: grid;
     grid-template-areas: 
     "a b"
