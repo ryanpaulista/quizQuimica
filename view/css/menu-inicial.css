@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Teko:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #1A5276;
+}
+
+main {
+    width: 80em;
+    margin: 0 auto;
+    height: 40em;
+
+    /* Centralização do conteúdo */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Organiza os elementos em coluna */
+}
+
+h1 {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 90px;
+    font-family: "Irish Grover", system-ui;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+button {
+    width: 8em;
+    height: 3em;
+    margin-top: 4em;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #6DFF72;
+    font-size: 30px;
+    font-family: "Irish Grover", system-ui;
+}
