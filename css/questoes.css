@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Teko:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #1A5276
+}
+
+header {
+    box-sizing: border-box;
+    width: 80%;
+    margin: 5em auto;
+    font-size: 20px;
+    font-family: "Irish Grover", system-ui;
+    text-align: center;
+    color: white;
+}
+
+.botoes{
+    box-sizing: border-box; 
+    display: flex; 
+    border: solid 1px white; 
+    justify-content: center; 
+    align-items: center; 
+    cursor: pointer; 
+    transition: transform 0.3s;
+    background-color: green;
+    border-radius: 20px;
+    font-family:  "Irish Grover", system-ui;
+    font-size: 30px;
+}
+
+
+main {
+    box-sizing: border-box;
+    height: 23em;
+    width: 80%;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 10em;
+    display: grid;
+    grid-template-areas: 
+    "a b"
+    "c d";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 11em 11em;
+    color: white;
+    gap: 3em;
+    
+    div.area-a{
+        grid-area: a; 
+        
+    }
+    div.area-b{grid-area: b;
+        background-color: red;
+    }
+    div.area-c{grid-area: c; 
+        background-color: purple;
+    }
+    div.area-d{grid-area: d; 
+        background-color: blue;
+    }
+
+    div.area-a:hover{
+        transform: translateY(-20px)
+    }
+    div.area-b:hover{
+        transform: translateY(-20px)
+    }
+    div.area-c:hover{
+        transform: translateY(-20px)
+    }
+    div.area-d:hover{
+        transform: translateY(-20px)
+    }
+}
