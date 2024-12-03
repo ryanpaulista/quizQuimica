@@ -6,6 +6,12 @@
     background-color: #1A5276;
 }
 
+a{
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+}
+
 main {
     width: 80em;
     margin: 0 auto;
@@ -35,7 +41,13 @@ button {
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    background-color: #6DFF72;
+    background-color: green;
     font-size: 30px;
     font-family: "Irish Grover", system-ui;
+    transition: transform 0.3s;
+    color: white;
+}
+
+button:hover{
+    transform: translateY(-10px);
 }
