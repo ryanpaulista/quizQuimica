@@ -19,6 +19,7 @@ header {
 .botoes{
     box-sizing: border-box; 
     display: flex; 
+    padding: 1em;
     border: solid 1px white; 
     justify-content: center; 
     align-items: center; 
@@ -28,6 +29,12 @@ header {
     border-radius: 20px;
     font-family:  "Irish Grover", system-ui;
     font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
 }
 
 
