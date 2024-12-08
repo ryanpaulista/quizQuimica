@@ -17,9 +17,10 @@ var acertos = 0;
         wrongOptions.forEach(option => {
             option.style.backgroundColor = "lightcoral"; // Muda a cor de fundo
             option.innerHTML = "ERROU"; // Altera o texto para "ERRADA"
+            option.style.cursor="not-allowed";
         });
 
-        correta.onclick=null;
+        correta.removeEventListener('click', acertou);
         correta.style.cursor="not-allowed";
         correta.style.backgroundColor="lightgreen";
         btnNext.style.display="block";
@@ -32,8 +33,12 @@ var acertos = 0;
         wrongOptions.forEach(option => {
             option.style.backgroundColor = "lightgreen"; // Muda a cor de fundo
             option.innerHTML = "ACERTOU"; // Altera o texto para "ERRADA"
+            option.removeEventListener('click', errada);
+            option.style.cursor="not-allowed";
         }); 
-
+    
+        
+        
         btnNext.style.display="block";
         console.log(acertos);
     }
