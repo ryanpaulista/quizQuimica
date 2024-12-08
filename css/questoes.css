@@ -82,6 +82,31 @@ main {
     }
 }
 
+/* Estilização do botão lateral */
+.btn-next {
+    position: fixed;
+    top: 50%; /* Sempre no meio vertical */
+    right: 2%; /* Distância da lateral direita */
+    transform: translateY(-50%); /* Centraliza exatamente no meio */
+    background-color: #28a745; /* Verde */
+    color: white;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 10px;
+    font-family: "Irish Grover", system-ui;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Efeito hover no botão */
+.btn-next:hover {
+    background-color: #218838; /* Verde mais escuro */
+    transform: translateY(-50%) scale(1.1); /* Aumenta um pouco ao passar o mouse */
+}
+
+
 @media screen and (max-width: 500px) {
 
     header{
