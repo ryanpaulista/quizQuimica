@@ -38,7 +38,8 @@ var acertos = 0;
         }); 
     
         
-        
+        correta.removeEventListener('click', acertou);
+        correta.style.cursor="not-allowed";
         btnNext.style.display="block";
         console.log(acertos);
     }
