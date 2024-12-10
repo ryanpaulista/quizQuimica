@@ -28,7 +28,6 @@ var acertos = 0;
     }
 
     function acertou(){
-        acertos = acertos + 1;
 
         wrongOptions.forEach(option => {
             option.style.backgroundColor = "lightgreen"; // Muda a cor de fundo
@@ -42,5 +41,14 @@ var acertos = 0;
         correta.style.cursor="not-allowed";
         btnNext.style.display="block";
         console.log(acertos);
+
+        if(localStorage.acertosCont){
+            localStorage.acertosCont = Number(localStorage.acertosCont) + 1;
+        } else {
+            localStorage.acertosCont = 1;
+        }
+        
     }
+
+    /* LEMBRAR DE DAR CLEAR NA PAGINA EM QUE MOSTRA OS RESULTADOS*/
         

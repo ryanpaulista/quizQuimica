@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+    <link rel="stylesheet" href="./css/resultado.css">
+</head>
+<body>
+    
+    <main>
+
+        <h1>Quantidade de acertos:</h1>
+
+        <p id="Presultado"></p>
+
+        <div onclick="window.location.href='./index.html'">Página Inicial</div>
+
+    </main>
+
+    <script>
+
+        if(localStorage.acertosCont){
+            const resultado = document.getElementById("Presultado").innerHTML=localStorage.acertosCont;
+        } else{
+            document.getElementById("Presultado").innerHTML=0;
+        }
+
+    </script>
+
+</body>
+</html>
