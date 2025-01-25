@@ -30,7 +30,7 @@ var acertos = 0;
     function acertou(){
 
         wrongOptions.forEach(option => {
-            option.style.backgroundColor = "lightgreen"; // Muda a cor de fundo
+            option.style.backgroundColor = "#0f8a08"; // Muda a cor de fundo
             option.innerHTML = "ACERTOU"; // Altera o texto para "ERRADA"
             option.removeEventListener('click', errada);
             option.style.cursor="not-allowed";
