@@ -5,39 +5,50 @@
     margin: 0;
 }
 
+html{
+    height: 100%;
+}
+
 body{
     padding: 0;
     margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    /*
     background-image: url(../images/fundo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    */
 }
 
 header {
     box-sizing: border-box;
     width: 100%;
-    margin: 5em auto;
+    padding: 4em;
     font-size: 15px;
     font-family: "Irish Grover", system-ui;
     text-align: center;
-    color: white;
+    background-color: black;
+    color:  white;
 }
 
 .botoes{
     box-sizing: border-box; 
     display: flex; 
-    padding: 1em;
+    padding: 1em; 
     border: solid 1px white; 
     justify-content: center; 
     align-items: center; 
     cursor: pointer; 
     transition: transform 0.3s;
     background-color: green;
-    border-radius: 20px;
     font-family:  "Irish Grover", system-ui;
     font-size: 25px;
+    width: 100%;
 }
 
 a{
@@ -48,24 +59,16 @@ a{
 
 
 main {
+    flex: 1;
     box-sizing: border-box;
-    height: 23em;
-    width: 80%;
+    width: 100%;
     padding: 0;
     margin: 0 auto;
-    margin-top: 5em;
-    display: grid;
-    grid-template-areas: 
-    "a b"
-    "c d";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 11em 11em;
+    display: flex;
     color: white;
-    gap: 3em;
-    
+
     div.area-a{
         grid-area: a; 
-        
     }
     div.area-b{grid-area: b;
         background-color: red;
@@ -114,8 +117,17 @@ main {
     background-color: #218838; /* Verde mais escuro */
     transform: translateY(-50%) scale(1.1); /* Aumenta um pouco ao passar o mouse */
 }
-
-
+@media screen and (max-width: 500px){
+    main{
+        flex-direction: column;
+        div.area-a:hover, div.area-b:hover,
+        div.area-c:hover,
+        div.area-d:hover {
+        transform: none; /* Remove o efeito de transform no mobile */
+    }
+    }
+}
+/*
 @media screen and (max-width: 500px) {
 
     header{
@@ -134,7 +146,6 @@ main {
     }
 
     main{
-
         display: block;
         margin-top: 2em;
         height: 21em;
