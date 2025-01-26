@@ -8,28 +8,29 @@
 body{
     padding: 0;
     margin: 0;
+    background-color: black;
+    /*
     background-image: url(../images/fundo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-a{
-    text-decoration: none;
-    background-color: transparent;
-    color: white;
+    */
 }
 
 main {
     width: 80em;
     margin: 0 auto;
-    height: 100vh;
+    
 
     /* Centralização do conteúdo */
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     flex-direction: column; /* Organiza os elementos em coluna */
+}
+
+img{
+    margin: 5em
 }
 
 h1 {
@@ -44,23 +45,23 @@ h1 {
 button {
     width: 8em;
     height: 3em;
-    margin-top: 15%;
+    margin-top: 4em;
     box-sizing: border-box;
-    border: none;
+    border: 1px solid white;
     border-radius: 20px;
     cursor: pointer;
-    background-color: green;
+    background-color: white;
     font-size: 30px;
     font-family: "Irish Grover", system-ui;
     transition: transform 0.3s;
-    color: white;
+    color: black;
 }
 
 button:hover{
     transform: translateY(-10px);
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 900px){
 
     *{
         padding: 0;
@@ -68,10 +69,11 @@ button:hover{
     }
 
     main{
-        width: 100%;
+        width: 80%;
 
         h1{
-            font-size: 50px;
+            font-size: 40px;
+            margin-top: 1em;
         }
 
         button{
@@ -88,8 +90,13 @@ button:hover{
 
     main{
 
+        img{
+            width: 70px;
+        }
+        
         h1{
-            font-size: 40px;
+            font-size: 30px;
+            margin-top: 0;
         }
 
         button{

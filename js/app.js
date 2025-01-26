@@ -15,14 +15,14 @@ var acertos = 0;
         
         // Aplica estilo e altera o conteúdo de cada uma
         wrongOptions.forEach(option => {
-            option.style.backgroundColor = "lightcoral"; // Muda a cor de fundo
+            option.style.backgroundColor = "#d10f1c"; // Muda a cor de fundo
             option.innerHTML = "ERROU"; // Altera o texto para "ERRADA"
             option.style.cursor="not-allowed";
         });
 
         correta.removeEventListener('click', acertou);
         correta.style.cursor="not-allowed";
-        correta.style.backgroundColor="lightgreen";
+        correta.style.backgroundColor="#0f8a08";
         btnNext.style.display="block";
         
     }
